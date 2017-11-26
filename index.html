@@ -1,74 +1,211 @@
+
 <!DOCTYPE html>
-<html lang="en">
-</html>
-<head>
-  <title>Superfood Smoothies</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/style.css">
-<script src="js/jquery-3.2.1.min.js"> </script>
-<script src="js/bootstrap.js"> </script>
-<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Parisienne|Playfair+Display" rel="stylesheet">
-</head>
-<body>
-  <!-- navbar adopted from: https://www.w3schools.com/bootstrap/bootstrap_theme_band.asp-->
+<html class="no-js">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Superfood Smoothies</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"><img id="apple" src='images/logo.png'></a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#myPage">Home</a></li>
-          <li><a href="#band">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Recipes
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="oats.html">Oats and Blueberries Smoothie</a></li>
-              <li><a href="chocolate.html">Chocolate and Avocado Smoothie</a></li>
-              <li><a href="spinach.html">Spinach and Banana Smoothie</a></li>
-      </div>
-    </div>
-  </nav>
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
 
-    <div class="container">
-    <div class='jumbotron'>
-        <h1>Superfood Smoothies</h1>
-<h2>- healthy and nutrient-rich blends for every day -<h2>
-        <div class="row">
-          <div class='col-sm-4'>
-          <img src='images/blueberry-oatmeal1-thumb.jpg' class="img-circle  center-block">
-      <div class="centered"><p>Oatmeal and Blueberries</p></div>
-        <small>Recipe description</small>
-          </div>
-          <div class='col-sm-4'>
-          <img src='images/chocolate-avocado1-thumb.jpg' class="img-circle  center-block">
-            <div class="centered"><p>Chocolate and Avocado</p></div>
-      <small>Recipe description</small>
-          </div>
-          <div class='col-sm-4'>
-          <img src='images/spinach-banana-thumb.jpg' class="img-circle  center-block">
-            <div class="centered"><p>Spinach and Banana</p></div>
-      <small>Recipe description</small>
-          </div>
-        </div>
+	<!-- Google Webfonts -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,500' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Parisienne|Playfair+Display" rel="stylesheet">
 
-      </div>
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Theme Style -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
+	</head>
+	<body>
 
-
-      <form role='form'>
-  <label for="email">Get the latest smoothie recipes</label>
-  <input type="text" name="email" >
-  <button type="submit">Sign me up!</button>
-</form>
+	<header id="fh5co-header" role="banner">
+		  <nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="navbar-header">
+						<!-- Mobile Toggle Menu Button -->
+						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle visible-xs-block" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+        <a class="navbar-brand" href="index.html"><img id="apple" src='images/logo.png'></a>
+						</div>
+						<div id="fh5co-navbar" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav navbar-right">
+								<li class="active"><a href="index.html"><span>Home <span class="border"></span></span></a></li>
+								<li><a href="about.html"><span>About <span class="border"></span></span></a></li>
+								<li><a href="contact.html"><span>Contact <span class="border"></span></span></a></li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Recipes
+									<span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="chocolate.html">Chocolate and Avocado Smoothie</a></li>
+										<li><a href="spinach.html">Spinach and Banana Smoothie</a></li>
+								<li><a href="oatmeal.html"><span>Oats and Blueberries Smoothie<span class="border"></span></span></a></li>
+							</ul>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
 </div>
-</body>
+</nav>
+</header>
+	<!-- END .header -->
+
+
+	<div id="fh5co-main">
+		<div class="fh5co-intro text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<h1 class="intro-lead">Superfood Smoothies</h1>
+						<p class="">- healthy and nutrient-rich blends for every day -</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="fh5co-portfolio">
+			<div class="fh5co-portfolio-item ">
+				<div class="fh5co-portfolio-figure animate-box" style="background-image: url(images/blueberry-oatmeal2.jpg);"></div>
+				<div class="fh5co-portfolio-description">
+					<h2>Oatmeal and Blueberries Smoothie</h2>
+					<p>Start the day on the right foot with this protein packed blueberry oatmeal smoothie. Loaded with dietary fiber, the oatmeal will help you feel full for longer. Sweetened with blueberries, almond milk, vanilla extract and dates, it is a great way to begin your day. And it’s vegan-friendly!</p>
+					<p><a href="oatmeal.html" class="btn btn-primary1">Go to recipe</a></p>
+				</div>
+			</div>
+			<div class="fh5co-portfolio-item fh5co-img-right">
+				<div class="fh5co-portfolio-figure animate-box" style="background-image: url(images/chocolate-avocado1.jpg);"></div>
+				<div class="fh5co-portfolio-description">
+					<h2>Dark Chocolate and Avocado Smoothie</h2>
+					<p>This cacao and avocado smoothie is easy to make and tastes absolutely incredible! The cacao will not only add a delicious note your super smoothie, but will also bring numerous health benefits, including antioxidant and anti-inflammatory properties. It is also a great source of healthy fats, proteins, potassium, zinc, and magnesium.</p>
+					<p><a href="chocolate.html" class="btn btn-primary2">Go to recipe</a></p>
+				</div>
+			</div>
+			<div class="fh5co-portfolio-item ">
+				<div class="fh5co-portfolio-figure animate-box" style="background-image: url(images/spinach-banana.jpg);"></div>
+				<div class="fh5co-portfolio-description">
+					<h2>Spinach and Banana Smoothie</h2>
+					<p>No excuses for skipping breakfast! This tasty, filling spinach and banana smoothie takes only 5 minutes to prepare and will keep you full until lunch. The spinach is packed with healthy nutrients: low in fat and even lower in cholesterol, it is high in niacin and zinc, as well as protein, fiber, vitamins. It will give you everything you need for a healthy start of the day. It's a real (no guilt) pleasure!</p>
+					<p><a href="spinach.html" class="btn btn-primary3">Go to recipe</a></p>
+				</div>
+			</div>
+		</div>
+
+		<div id="fh5co-team">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="row">
+							<h2 class="section-lead text-center">The power of superfoods</h2>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-staff to-animate">
+								<figure>
+								<img src="images/spinach.jpg" alt="Free HTML5 Template by FREEHTML5.co" class="img-responsive1">
+								</figure>
+								<h3>Spinach</h3>
+								<p>Spinach is packed with healthy nutrients, low in fat and even lower in cholesterol, it is high in niacin and zinc, as well as protein, fiber, vitamins A, C, E and K. It also helps maintain your vigorous brain function, memory and mental clarity. It is great for every part of your body!</p>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-staff to-animate">
+								<figure>
+								<img src="images/oatmeal.jpg" alt="Free HTML5 Template by FREEHTML5.co" class="img-responsive1">
+								</figure>
+								<h3>Oatmeal</h3>
+								<p>Oats are a concentrated source of nutrients. They are loaded in dietary fiber (containing more than any other grain), help you feel fuller for longer, are naturally gluten-free and have a range of healthy cholesterol-lowering properties. Perfect for a breakfast smoothie!</p>
+							</div>
+							<div class="clearfix visible-sm-block visible-xs-block"></div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-staff to-animate">
+								<figure>
+								<img src="images/avocado.jpg" alt="Free HTML5 Template by FREEHTML5.co" class="img-responsive1">
+								</figure>
+								<h3>Avocado</h3>
+								<p>The delicious healthy monounsaturated fat in the avocado is one of its biggest SuperFood health claims. The only other fruit with a comparable amount of monounsaturated fat is the olive. The monounsaturated fat in avocados is oleic acid, which helps lower cholesterol.</p>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-staff to-animate">
+								<figure>
+								<img src="images/cacao.jpg" alt="Free HTML5 Template by FREEHTML5.co" class="img-responsive1">
+								</figure>
+								<h3>Dark Chocolate</h3>
+								<p>The health benefits of dark chocolate are related to the natural compounds in the cacao bean, including epicatechin, which has antioxidant and anti-inflammatory properties. It is also a great source of healthy fats, proteins, potassium, zinc, and magnesium </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="form">
+	      <form role='form'>
+						<h2>Stay Updated</h2>
+	  <label for="email">Subscribe to my Newsletter for new recipe posts, tips & photos</label>
+	  <input type="text" name="email">
+	  <button type="submit">Sign me up!</button>
+	</form>
+</div>
+
+<!--==============================
+              footer
+=================================-->
+	<footer id="fh5co-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 text-center">
+					<p>&copy; All Rights Reserved | Natalia Miteva <br> In association with <a href="http://www.codefirstgirls.org.uk/"><b>Code First Girls</b><br><a href="#" class="fa fa-twitter"></a>
+						<a href="#" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-google-plus"></a>
+						<a href="#" class="fa fa-pinterest"></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+
+
+	</body>
+</html>
